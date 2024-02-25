@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">SPOS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="font_awesome_print_icon">&#xF02F;</string>
+    <string name="font_awesome_gift_icon">&#xF06B;</string>
+    <string name="font_awesome_times_icon">&#xF00D;</string>
+    <string name="font_awesom_eye_open">&#xf06e;</string>
+    <string name="font_awesom_eye_slash">&#xf070;</string>
+    <string name="vertical_ellipsis">&#8942;</string>
+    <string name="item_wise_sale_report">Item Wise Sale Reports</string>
+    <string name="customer_wise_sale_report">Customer Wise Sale Reports</string>
+    <string name="about_to_out_of_stock">About To Out Of Stock</string>
+    <string name="aged_inventroy_report">Aged Inventory Report</string>
+    <string name="void_bill_report">Void Bill Report</string>
+    <string name="transaction_report">Transaction Report</string>
+    <string name="return_item_report">Return Item Report</string>
+    <string name="profit_report">Profit Report</string>
+    <string name="stock_report">Stock Report</string>
+    <string name="out_stock_report">Out of Stock Report</string>
+    <string name="expense_report">Expense Report</string>
+    <string name="payment_method_report">Payment Method Report</string>
+    <string name="gst_report">GST Report</string>
+    <string name="rupee">\u20B9 </string>
+    <string name="inventoryupdateexpense">Inventory Update Expenses</string>
+    <string name="labourcharges">Labour Charges</string>
+    <string name="transporationcharges">Transporation Charges</string>
+    <string name="rentalcharges">Rental Charges</string>
+    <string name="electricitychanrge">Electricity Charges</string>
+    <string name="watercharge">Water Charges</string>
+    <string name="fuelcharge">Fuel Charges</string>
+    <string name="donationcharge">Donation Charge</string>
+    <string name="telephonecharge">Telephone Charge</string>
+    <string name="insurancecharge">Insurance Charge</string>
+    <string name="tax">Tax</string>
+    <string name="thirdpartypayment">Third Party Payments</string>
+    <string name="inventroydamage">Inventory Damage/Shrink Charge</string>
+    <string name="carrybag">Carry Bags/Boxes</string>
+    <string name="other">Others</string>
+    <string name="welcomeshipgig">Welcome Back :)</string>
+    <string name="resetpassword">Forgot Password?</string>
+    <string name="we4lcometagline">To keep connected with us please login with your personal</string>
+    <string name="addphoto">Add Photo !</string>
+    <string name="search_hint">search</string>
+    <string name="app_label">app label</string>
+    <string name="credit">Credit Card</string>
+    <string name="cash">Cash</string>
+    <string name="debit">Debit Card</string>
+
+
+    <string-array name="object_array">
+        <item>All Categories</item>
+        <item>One</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="we4lcometaglinetwo">information by email address and password</string>
+    <string name="all_stock_">About to out of stock Report</string>
+    <string name="action_search">Search</string>
+    <string name="back_vector_path">Title</string>
+
+
+    <style name="RedProgressBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/login_welcome_color</item>
+        <item name="colorPrimaryDark">@color/login_welcome_color</item>
+        <item name="colorAccent">@color/login_welcome_color</item>
+    </style>
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/checkpoint_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/low_white"
+        android:orientation="vertical"
+        android:id="@+id/click_after_amount">
+        <LinearLayout
+            android:background="@color/base_login_btn"
+            android:gravity="start|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/checkpoint_header_height">
+            <TextView
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Product Quantiy :-"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/prev_Qty"
+                android:layout_weight=".4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_weight=".1"
+                android:background="@color/base_login_btn"
+                android:gravity="end|center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/checkpoint_header_height">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:src="@drawable/ic_white_close_icons"
+                    android:gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/twenty_dp"
+            android:layout_marginLeft="@dimen/twenty_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:text="Your purchase item quantity showing in top, If you want to return any item so please enter quantity in box to return."
+                android:textSize="@dimen/eighteen_sp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Return Quantity"
+                android:layout_marginTop="@dimen/five_dp"
+                android:textSize="@dimen/eighteen_sp"
+                android:textColor="@color/base_color_text" />
+
+            <EditText
+                android:id="@+id/inputQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/base_color_text"
+                android:padding="@dimen/twelvedp"
+                android:background="@drawable/login_edittext_background"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/total_amount_layout"
+            android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/submit"
+               android:layout_width="match_parent"
+               android:textColor="@color/white"
+               android:text="Submit"
+               android:layout_marginRight="@dimen/fiftydp"
+               android:layout_marginLeft="@dimen/fiftydp"
+               android:layout_marginBottom="@dimen/ten_dp"
+               android:padding="@dimen/ten_dp"
+               android:backgroundTint="@color/base_login_btn"
+               android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

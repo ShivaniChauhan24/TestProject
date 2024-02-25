@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/two"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:numpad="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:layout_marginBottom="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/discount_text_view"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discount"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_weight=".9"
+        android:id="@+id/quantity_dialog_close"
+        android:src="@drawable/ic_black_close_icons"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/availableQty"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:text="Available Qty :-"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="@dimen/ten_sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:visibility="visible"
+        android:id="@+id/edt_txt_quantity"
+        android:layout_width="@dimen/eighty_dp"
+        android:layout_height="50dp"
+        android:maxLength="15"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="@drawable/login_text_border"
+        android:layout_margin="5dp"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:id="@+id/discount_radio_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_margin="@dimen/manage_inventory_textsize">
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group_special_discount"
+            android:weightSum="2">
+
+
+            <RadioButton
+                android:id="@+id/discount_in_percent"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/addcustomer_ll_inside_marginbottom"
+                android:buttonTint="@color/white"
+                android:drawableTint="@color/white"
+                android:drawableEnd="@drawable/percentagediscount"
+                android:textColor="@color/white"
+                android:background="@color/radio_button_color"
+                android:textSize="@dimen/checkpoint_radiobutton_textsize"
+                android:layout_marginRight="@dimen/manage_inventory_textsize"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/discount_in_money"
+                android:layout_width="0dp"
+                android:drawableTint="@color/white"
+                android:layout_height="@dimen/addcustomer_ll_inside_marginbottom"
+                android:buttonTint="@color/white"
+                android:drawableEnd="@drawable/rupeeindian"
+                android:background="@color/radio_button_color"
+                android:textColor="@color/white"
+                android:textSize="@dimen/checkpoint_radiobutton_textsize"
+                android:layout_weight="1"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <com.fxn769.Numpad
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        numpad:numpad_background_resource="@drawable/numpad_background"
+        numpad:numpad_comma="."
+        numpad:numpad_fontpath="fonts/custom_font.ttf"
+        numpad:numpad_grid_background_color="@color/gray"
+        numpad:numpad_grid_line_thickness="1dp"
+        numpad:numpad_grid_visible="true"
+        numpad:numpad_image_resource="@drawable/ic_backspace"
+        numpad:numpad_text_color="#000000"
+        numpad:numpad_text_limit="20"
+        numpad:numpad_text_size="18dp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/dialog_add_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/peripherals_button_color_blue"
+        android:backgroundTint="@color/peripherals_button_color_blue"
+        android:gravity="center"
+        android:text="Add to cart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/add_inventory_textsize" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/dialog_update_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/peripherals_button_color_blue"
+        android:backgroundTint="@color/peripherals_button_color_blue"
+        android:gravity="center"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/add_inventory_textsize" />
+
+    <TextView
+        android:id="@+id/dialog_apply_discount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/peripherals_button_color_blue"
+        android:backgroundTint="@color/peripherals_button_color_blue"
+        android:gravity="center"
+        android:text="Apply"
+        android:textColor="@color/white"
+        android:textSize="@dimen/add_inventory_textsize"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

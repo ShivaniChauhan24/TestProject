@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edittext_height"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:tint="@color/tint_color"
+            android:src="@drawable/ic_back_arrow"
+            />
+
+        <!-- <android.support.v7.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:titleTextColor="@color/black" />-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fifteen_dp"
+        android:background="@drawable/custom_all_background_border">
+
+    <TextView
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profit Report"
+        android:textColor="@color/black"
+        android:textSize="@dimen/all_reports_textview_height"
+        android:layout_margin="@dimen/home_item_details_text_size"/>
+
+    <LinearLayout
+        android:id="@id/ll_spinner"
+        android:layout_width="@dimen/all_edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:baselineAligned="false"
+        android:drawableEnd="@drawable/more"
+        android:drawablePadding="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:backgroundTint="@color/search_tint_line_color"
+        android:textSize="@dimen/add_expenduture_textsize">
+
+        <Spinner
+            android:id="@+id/transactionReportsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ll_spinner_width"
+            style="@style/SpinnerTheme"/>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_spinner"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="@color/all_reports_header_bg_color">
+
+        <TextView
+            android:id="@+id/srno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="S.No."
+            android:textSize="@dimen/ll_allreports_textsize"/>
+
+        <TextView
+            android:id="@+id/transactionid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Transaction Id"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/customerid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Customer ID"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/saletotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Sale Total"
+            android:textSize="@dimen/ll_allreports_textsize"/>
+
+        <TextView
+            android:id="@+id/profit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Profit"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ll_header"
+        android:id="@+id/view"
+        android:background="@color/stripcolor"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/view"
+        android:id="@+id/recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/checkpoint_width"
+        android:background="@color/add_inventory_bg_color"
+        android:layout_alignParentBottom="true"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="right">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:id="@+id/listView"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontalScrollView">
+
+        </ListView>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:id="@+id/number"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLay"
+                android:orientation="horizontal" >
+                <TextView
+                    android:textSize="18sp"
+                    android:drawablePadding="10dp"
+                    android:gravity="left"
+                    android:id="@+id/previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:drawablePadding="10dp"
+                    android:gravity="right"
+                    android:layout_toRightOf="@id/number"
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="15dp"
+    android:elevation="@dimen/eight_dp"
+    app:cardMaxElevation="@dimen/eight_dp"
+    app:cardElevation="@dimen/eight_dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/main_container">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="@dimen/thirtytwo"
+            android:tint="@color/tint_color"
+            android:layout_height="@dimen/thirtytwo"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/close" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/checkpoint_ll_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:hint="First Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:padding="@dimen/seven_dp"
+        android:background="@drawable/add_customer_border"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:hint="Last Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:padding="@dimen/seven_dp"
+        android:background="@drawable/add_customer_border"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/seven_dp"
+        android:background="@drawable/add_customer_border"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:hint="Phone"
+        android:maxLength="10"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:padding="@dimen/seven_dp"
+        android:background="@drawable/add_customer_border"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/rg_Select_Gender"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="match_parent"
+            android:text="Male"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="match_parent"
+            android:text="Female"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/fourty_five_dp"
+        android:layout_marginLeft="@dimen/fourty_five_dp"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/createcustomer"
+            android:layout_width="match_parent"
+            android:text="Add Customer"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:backgroundTint="@color/base_login_btn"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

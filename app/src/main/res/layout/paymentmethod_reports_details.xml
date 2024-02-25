@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+    <TextView
+            android:id="@+id/srno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="S.No."
+            android:textSize="@dimen/ll_allreports_textsize"/>
+
+        <TextView
+            android:id="@+id/disc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Disc"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/totalamount"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Total Amount"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/gst"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Taxes"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+
+        <TextView
+            android:id="@+id/quantityy"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Quantity"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Date" />
+
+        <TextView
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:id="@+id/mode"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Payment Mode" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

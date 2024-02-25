@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all_category"
+        android:title="All Categories" />
+    <item
+        android:id="@+id/electronic"
+        android:title="Electronic"/>
+    <item
+        android:id="@+id/grocery"
+        android:title="Grocery"/>
+    <item
+        android:id="@+id/household"
+        android:title="Household"/>
+    <item
+        android:title="Household"/>
+
+</menu>

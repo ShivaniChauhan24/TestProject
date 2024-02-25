@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/intialize"
+            android:title="Data Synchronize"/>
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashcoard"
+            android:title="DashBoard"/>
+        <item
+            android:id="@+id/nav_allreports"
+            android:icon="@drawable/all_reports"
+            android:title="All Reports"/>
+        <item
+            android:id="@+id/nav_manage_customers"
+            android:icon="@drawable/manage_customer"
+            android:title="Manage Customers"/>
+        <item
+            android:id="@+id/nav_add_inventory"
+            android:icon="@drawable/add_inventory"
+            android:title="Add Inventory"/>
+        <item
+            android:id="@+id/nav_manage_inventory"
+            android:icon="@drawable/manage_inventory"
+            android:title="Manage Inventory"/>
+        <item
+            android:id="@+id/nav_daily_sales_reports"
+            android:icon="@drawable/dsr"
+            android:title="Daily Sales Reports" />
+        <item
+            android:id="@+id/nav_add_expenditure"
+            android:icon="@drawable/add_expenditure"
+            android:title="Add Expenditure"/>
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/change_passord"
+            android:title="Change Password"/>
+        <item
+            android:id="@+id/nav_initialize"
+            android:icon="@drawable/intialize"
+            android:title="Initialize"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="LogOut"/>
+
+        <item
+            android:visible="false"
+            android:id="@+id/VersionCode"
+            android:title="v"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="650dp"
+            android:elevation="@dimen/two_dp"
+            android:layout_height="300dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:text="Choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:id="@+id/takephoto"
+                    android:background="@color/grays"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_white_camera_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:text="Camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:drawableTop="@drawable/previous1"
+                        android:id="@+id/takephoto1"
+                        android:layout_marginEnd="30dp"
+                        android:textColor="@color/white"
+                        android:text="Camera"
+                        android:background="@color/grays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/choosegallery"
+                    android:background="@color/grays"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_white_gallery_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:text="Gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/next1"
+                        android:id="@+id/choosegallery1"
+                        android:layout_marginEnd="30dp"
+                        android:textColor="@color/white"
+                        android:text="Gallery"
+                        android:background="@color/grays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

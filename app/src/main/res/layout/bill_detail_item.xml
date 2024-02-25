@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+
+  <LinearLayout
+      android:id="@+id/ll_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/viewI"
+      android:weightSum="6"
+      android:layout_marginTop="@dimen/ten_dp"
+      android:background="@color/white"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/sr_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="SR"
+        android:textAlignment="center"
+        android:textSize="@dimen/ll_allreports_textsize"
+        android:layout_marginLeft="@dimen/five_dp"/>
+
+
+    <TextView
+        android:layout_marginStart="@dimen/five_dp"
+        android:id="@+id/productname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textAlignment="center"
+        android:text="Product Name"
+        android:textSize="@dimen/ll_allreports_textsize"  />
+
+    <TextView
+        android:layout_marginStart="@dimen/five_dp"
+        android:id="@+id/bill_Qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:gravity="left"
+        android:text="Quantity"
+        android:textSize="@dimen/ll_allreports_textsize"  />
+
+    <TextView
+        android:layout_marginStart="@dimen/five_dp"
+        android:id="@+id/bill_UnitPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:gravity="left"
+        android:text="Unit Price"
+        android:textSize="@dimen/ll_allreports_textsize"  />
+
+    <TextView
+        android:layout_marginStart="@dimen/five_dp"
+        android:id="@+id/bill_discount"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="Discount"
+        android:textSize="@dimen/ll_allreports_textsize" />
+
+
+    <TextView
+        android:singleLine="true"
+        android:layout_marginStart="@dimen/five_dp"
+        android:id="@+id/bill_return"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="Return?"
+        android:textSize="@dimen/ll_allreports_textsize"  />
+
+
+  </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:background="@color/tint_color"
+      android:layout_marginRight="@dimen/twenty_dp"
+      android:layout_marginLeft="@dimen/twenty_dp"
+      android:layout_marginTop="@dimen/five_dp"
+      android:layout_height="1dp"/>
+
+
+</LinearLayout>

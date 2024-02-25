@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+    <TextView
+            android:id="@+id/srno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="S.No."
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/transactionid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Transaction Id"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/customerid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Customer ID"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/paymentmode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Payment Mode"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/returndate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Return Date"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+    </LinearLayout>
+    <include layout="@layout/bottom_line"/>
+
+</LinearLayout>

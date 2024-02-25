@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_header_width"
+        android:background="@drawable/myreact"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:backgroundTint="@color/afterfocuseedittext">
+
+
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/customerid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Customer ID"
+            android:textSize="@dimen/ll_allreports_textsize"  />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/firstname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="First Name"
+            android:textSize="@dimen/ll_allreports_textsize"  />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/lastname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Last Name"
+            android:textSize="@dimen/ll_allreports_textsize"  />
+
+
+
+        <!-- <TextView
+             android:layout_marginStart="10dp"
+             android:id="@+id/mobile"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="left"
+             android:singleLine="true"
+             android:text="Mobile Number"
+             android:textSize="@dimen/ll_allreports_textsize" />
+ -->
+
+
+    </LinearLayout>
+
+
+
+
+    <include layout="@layout/bottom_line"/>
+
+
+</LinearLayout>

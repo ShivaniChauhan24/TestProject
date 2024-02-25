@@ -1,0 +1,258 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.shipgig.thegun.pos.fragment.CartFragment">
+
+  <RelativeLayout
+    android:id="@+id/rl_center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+      android:id="@+id/scroll_view12"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/all_edit_text_width"
+      android:scrollbars="none">
+      <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCartRecyclerView">
+
+      </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+    <!--<com.baoyz.swipemenulistview.SwipeMenuListView-->
+      <!--android:id="@+id/mListView"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="match_parent"-->
+      <!--android:layout_marginBottom="@dimen/home_swipelist_marginbottom"-->
+      <!--android:visibility="gone" />-->
+
+    <RelativeLayout
+      android:visibility="gone"
+      android:id="@+id/pay_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/ll_checkpoint"
+      android:layout_margin="@dimen/addcustomer_ll_inside_marginbottom">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+          android:id="@+id/discount"
+          android:layout_width="@dimen/help_button_width"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:textColor="@color/white"
+          android:drawablePadding="5dp"
+          android:background="@drawable/custom_button_border"
+          android:backgroundTint="@color/radio_button_color"
+          android:drawableRight="@drawable/plus"
+          android:text="Add discount"
+          android:padding="2dp"
+          android:textAlignment="textStart"
+          tools:ignore="RtlCompat" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="No. of items in cart"
+            android:textColor="@color/grays"/>
+
+          <TextView
+            android:id="@+id/txt_item_in_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="0"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/grays"/>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/gray" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="Discount"
+            android:textColor="@color/radio_button_color" />
+
+          <TextView
+            android:id="@+id/txt_view_discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="0"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/radio_button_color"/>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/gray" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:text="Subtotal"
+            android:textColor="@color/grays" />
+
+          <TextView
+            android:id="@+id/txt_view_subtotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="0"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/grays"/>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/gray" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="CGST Amount"
+            android:textColor="@color/radio_button_color"/>
+
+          <TextView
+            android:id="@+id/txt_view_cgst_amt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="0"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/radio_button_color"/>
+        </LinearLayout>
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/gray" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:text="SGST Amount"
+            android:textColor="@color/radio_button_color"/>
+
+          <TextView
+            android:id="@+id/txt_view_sgst_amt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="0"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/radio_button_color"/>
+        </LinearLayout>
+
+
+
+      </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+      android:visibility="gone"
+      android:id="@+id/ll_checkpoint"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/home_paytext_height"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/custom_button_border"
+      android:backgroundTint="@color/peripherals_button_color_blue"
+      android:gravity="center"
+      android:layout_marginLeft="@dimen/addcustomer_ll_inside_marginbottom"
+      android:layout_marginRight="@dimen/addcustomer_ll_inside_marginbottom"
+      android:orientation="horizontal"
+      android:weightSum="2">
+
+      <TextView
+        android:id="@+id/tv_charged"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight=".5"
+        android:gravity="start"
+        android:text="Pay "
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+      <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1.5"
+        android:gravity="end">
+
+        <TextView
+          android:id="@+id/sign_totalPrice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="end"
+          android:text="@string/rupee"
+          android:textColor="@color/white"
+          android:textSize="20sp" />
+
+        <TextView
+          android:id="@+id/total_amount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="end"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          android:text="0"/>
+      </LinearLayout>
+
+    </LinearLayout>
+  </RelativeLayout>
+</FrameLayout>

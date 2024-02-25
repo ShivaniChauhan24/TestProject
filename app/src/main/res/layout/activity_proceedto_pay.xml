@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/low_white"
+    tools:context="com.shipgig.thegun.pos.Payment.ProceedtoPayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/open_drawer"
+            android:padding="@dimen/ten_dp"
+            android:visibility="visible"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/seven_dp"
+            android:tint="@color/tint_color"
+            android:src="@drawable/ic_back_arrow" />
+        <TextView
+            android:layout_marginLeft="@dimen/twenty_five"
+            android:layout_width="wrap_content"
+            android:text="Proceed to Pay"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/twentytwo_sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/stripcolor"
+        android:layout_marginBottom="@dimen/five_dp"
+        android:layout_height="2dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="Choose a payment option below and fill out the"
+                android:textSize="@dimen/eighteen_sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="appropriate information "
+                android:textSize="@dimen/eighteen_sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:padding="@dimen/two_dp"
+            android:layout_marginTop="@dimen/fifty_two_dp"
+            android:layout_height="250dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cashCard"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/ten_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginBottom="@dimen/five_dp"
+                    android:elevation="@dimen/five_dp"
+                    app:cardElevation="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/cash_container"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginRight="@dimen/five_dp"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/cash_image"
+                            android:layout_width="170dp"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:src="@drawable/cash"
+                            android:layout_gravity="center"
+                            android:layout_height="190dp" />
+
+                        <TextView
+                            android:id="@+id/cash"
+                            android:layout_width="match_parent"
+                            android:text="Cash"
+                            android:layout_marginRight="@dimen/twelvedp"
+                            android:layout_marginLeft="@dimen/twelvedp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/eighteen_sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/paytmCard"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/ten_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginBottom="@dimen/five_dp"
+                    android:elevation="@dimen/five_dp"
+                    app:cardElevation="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/paytm_container"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginRight="@dimen/five_dp"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/paytm_image"
+                            android:layout_width="170dp"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:src="@drawable/paytm"
+                            android:layout_gravity="center"
+                            android:layout_height="190dp" />
+
+                        <TextView
+                            android:id="@+id/paytm"
+                            android:layout_marginRight="@dimen/twelvedp"
+                            android:layout_marginLeft="@dimen/twelvedp"
+                            android:layout_width="match_parent"
+                            android:text="Paytm"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/eighteen_sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardCard"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/ten_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginBottom="@dimen/five_dp"
+                    android:elevation="@dimen/five_dp"
+                    app:cardElevation="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:layout_marginLeft="@dimen/eight_dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/card_container"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginRight="@dimen/five_dp"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/card_image"
+                            android:layout_width="170dp"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:src="@drawable/card"
+                            android:background="@color/white"
+                            android:layout_gravity="center"
+                            android:layout_height="190dp" />
+
+                        <TextView
+                            android:id="@+id/card"
+                            android:layout_width="match_parent"
+                            android:text="Card"
+                            android:layout_marginRight="@dimen/twelvedp"
+                            android:layout_marginLeft="@dimen/twelvedp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/eighteen_sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/pay_for_Proceed"
+                android:layout_width="@dimen/three_hundred_thirty_dp"
+                android:textAllCaps="false"
+                android:background="@drawable/rippletwo"
+                android:backgroundTint="@color/base_login_btn"
+                android:text="Pay Rs.360"
+                android:textColor="@color/white"
+                android:padding="@dimen/five_dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/thirtyfivedp"
+            app:cardCornerRadius="@dimen/fifteen_dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:padding="@dimen/fifteen_dp"
+                android:orientation="vertical"
+                android:id="@+id/paylater"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:padding="@dimen/fifteen_dp"
+                    android:src="@drawable/paylater"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Pay Later "
+                    android:layout_marginRight="@dimen/twelvedp"
+                    android:layout_marginLeft="@dimen/twelvedp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/twentytwo_sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

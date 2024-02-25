@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/low_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/open_drawer"
+            android:padding="@dimen/ten_dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/seven_dp"
+            android:src="@drawable/menu" />
+        <TextView
+            android:layout_marginLeft="@dimen/twenty_five"
+            android:layout_width="wrap_content"
+            android:text="Add Expenditures"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/twentytwo_sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/stripcolor"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_marginBottom="@dimen/five_dp"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/custom_all_background_border"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/twenty_five"
+        android:layout_marginRight="@dimen/twenty_five"
+        android:layout_marginBottom="@dimen/twenty_five"
+        android:elevation="@dimen/five_dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight=".9"
+        android:layout_marginLeft="@dimen/home_item_details_text_size">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/inventory_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/inventoryupdateexpense"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/labercharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/labourcharges"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/transactioncharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/transporationcharges"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/rentcharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/rentalcharges"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/electricitycharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/electricitychanrge"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/watercharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/watercharge"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/fuelcharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/fuelcharge"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize"
+                    tools:ignore="OnClick" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/donationcharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/donationcharge"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/thirdpartypayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/thirdpartypayment"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/telephonecharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/telephonecharge"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/tax"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/insurancecharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/insurancecharge"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/shrinkcharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingStart="10sp"
+                    android:text="@string/inventroydamage"
+                    android:textColor="@color/login_tagline_color"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/carrybagcharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/carrybag"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+                <RadioButton
+                    android:id="@+id/otherscharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_expenduture_radiobutton_height"
+                    android:buttonTint="@color/radio_button_color"
+                    android:layoutDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="@string/other"
+                    android:textColor="@drawable/radio_text_checked"
+                    android:textSize="@dimen/radiobutton_textsize" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_weight=".5"
+        android:layout_margin="@dimen/login_edittext_height">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+
+
+            <EditText
+                android:id="@+id/etdescription"
+                android:layout_width="@dimen/all_edit_text_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_home_search"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Enter description*"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:lines="5"
+                android:singleLine="false"
+                android:elevation="@dimen/fourdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/add_expenduture_textsize"
+                />
+
+
+
+            <EditText
+                android:id="@+id/etamount"
+                android:layout_width="@dimen/all_edit_text_width"
+                android:layout_height="@dimen/add_expenduture_edittext_height"
+                android:background="@drawable/border_home_search"
+                android:focusable="true"
+                android:elevation="@dimen/fourdp"
+                android:focusableInTouchMode="true"
+                android:hint="Enter Amount*"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/add_expenduture_textsize"
+                android:layout_marginTop="@dimen/twelvedp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="@dimen/add_expenduture_button_width"
+            android:elevation="@dimen/fourdp"
+            android:layout_height="@dimen/add_expenduture_button_height"
+            android:background="@drawable/add_inventory_button_shap"
+            android:backgroundTint="@color/reports_bg"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/home_item_details_text_size"/>
+
+    </LinearLayout>
+</LinearLayout>

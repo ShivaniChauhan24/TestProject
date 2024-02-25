@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MangeCustomerActivity">
+    <item
+        android:id="@+id/back_arrow"
+        android:icon="@drawable/ic_back_arrow"
+        android:orderInCategory="100"
+        android:title="@string/back_vector_path"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.ImageView"
+        />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_white_search_icons"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>

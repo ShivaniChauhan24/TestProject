@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+    <TextView
+            android:id="@+id/srno"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="S.No."
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textAlignment="center"
+            android:text="User Id"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/expensetype"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Expense Type"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/expensedescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textAlignment="center"
+            android:text="Expense Description"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:text="Amount"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/createon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textAlignment="center"
+            android:text="Created On"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/bottom_line"/>
+</LinearLayout>

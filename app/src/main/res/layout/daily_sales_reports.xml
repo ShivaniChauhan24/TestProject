@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/add_inventory_bg_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@id/ll_spinner"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:baselineAligned="false"
+        android:drawableEnd="@drawable/more"
+        android:singleLine="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/white"
+        android:textSize="@dimen/add_expenduture_textsize">
+        <ImageView
+            android:id="@+id/open_drawer"
+            android:padding="@dimen/ten_dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/seven_dp"
+            android:src="@drawable/menu" />
+        <TextView
+            android:layout_marginLeft="@dimen/twenty_five"
+            android:layout_width="wrap_content"
+            android:text="Daily Sales Report"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/twentytwo_sp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_above="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:background="@color/stripcolor"
+        android:layout_marginTop="@dimen/five_dp"
+        android:layout_marginBottom="@dimen/two_dp"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_spinner"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:background="@color/all_reports_header_bg_color">
+
+        <TextView
+            android:id="@+id/srno"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="S.No."
+            android:textSize="@dimen/ll_allreports_textsize"/>
+
+        <TextView
+            android:id="@+id/disc"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Disc"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/totalamount"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Total Amount"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/gst"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingEnd="10dp"-->
+            <!--android:text="Payment Mode"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="@dimen/ll_allreports_textsize" />-->
+
+        <!--<TextView-->
+        <!--android:paddingStart="10dp"-->
+        <!--android:id="@+id/sgst"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="left"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="SGST"-->
+        <!--android:textSize="@dimen/ll_allreports_textsize" />-->
+
+        <TextView
+            android:paddingStart="10dp"
+            android:id="@+id/cgst"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Taxes"
+            android:textSize="@dimen/ll_allreports_textsize" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Quantity"
+            android:textAlignment="center"
+            android:textSize="@dimen/ll_allreports_textsize"/>
+
+        <TextView
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/date"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date" />
+
+        <TextView
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/view"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="View" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ll_header"
+        android:id="@+id/view_line"
+        android:background="@color/stripcolor"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.15"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/view_line"
+                android:id="@+id/recylerview"
+                android:padding="@dimen/six_dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.85"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/checkpoint_width"
+                android:background="@color/add_inventory_bg_color"
+                android:layout_alignParentBottom="true"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="right">
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/listView"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/horizontalScrollView">
+
+                </ListView>
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:id="@+id/number"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnLay"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:textSize="18sp"
+                            android:drawablePadding="10dp"
+                            android:gravity="left"
+                            android:id="@+id/previous"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:drawablePadding="10dp"
+                            android:gravity="right"
+                            android:layout_toRightOf="@id/number"
+                            android:id="@+id/next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

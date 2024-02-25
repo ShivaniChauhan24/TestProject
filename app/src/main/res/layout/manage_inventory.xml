@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/low_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ly"
+        android:background="@color/low_white"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/open_drawer"
+                android:padding="@dimen/ten_dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/seven_dp"
+                android:src="@drawable/menu" />
+            <TextView
+                android:layout_marginLeft="@dimen/twenty_five"
+                android:layout_width="wrap_content"
+                android:text="Manage Inventory"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/twentytwo_sp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search"
+                android:elevation="@dimen/four_dp"
+                android:layout_marginBottom="@dimen/three_dp"
+                android:layout_marginTop="@dimen/three_dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableEnd="@drawable/search"
+                android:hint="Search Product By Name"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/eight_dp"
+                android:layout_marginRight="@dimen/eight_dp"
+                android:padding="@dimen/twelve"
+                android:background="@drawable/border_home_search"
+                android:textSize="@dimen/add_expenduture_textsize"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/stripcolor"
+        android:layout_marginBottom="@dimen/two_dp"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/all_reports_header_bg_color"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/srno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="SR No."
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="@dimen/manage_inventory_textsize"
+            android:layout_marginLeft="@dimen/home_item_details_text_size"/>
+
+
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Product Name"
+            android:textSize="@dimen/manage_inventory_textsize" />
+
+
+
+        <TextView
+            android:id="@+id/quantity"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="Quantity"
+            android:textSize="@dimen/manage_inventory_textsize" />
+
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="Discount"
+            android:textSize="@dimen/manage_inventory_textsize" />
+
+
+        <TextView
+            android:id="@+id/unitprice"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="Unit Price"
+            android:textSize="@dimen/manage_inventory_textsize" />
+
+
+
+
+        <TextView
+            android:id="@+id/itemEdit"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="Edit"
+            android:textSize="@dimen/manage_inventory_textsize" />
+
+
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Delete"
+            android:textSize="@dimen/manage_inventory_textsize" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/ll_header"
+        android:background="@color/stripcolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.15"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/v_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view"
+                android:visibility="visible">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.85"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/checkpoint_width"
+                android:background="@color/add_inventory_bg_color"
+                android:layout_alignParentBottom="true"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="right">
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/listView"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/horizontalScrollView">
+
+                </ListView>
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:id="@+id/number"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnLay"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:textSize="18sp"
+                            android:drawablePadding="10dp"
+                            android:gravity="left"
+                            android:id="@+id/previous"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:drawablePadding="10dp"
+                            android:gravity="right"
+                            android:layout_toRightOf="@id/number"
+                            android:id="@+id/next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

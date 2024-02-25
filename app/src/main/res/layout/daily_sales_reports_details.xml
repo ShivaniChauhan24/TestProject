@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_header_width"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+
+        <TextView
+            android:singleLine="true"
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:id="@+id/srno"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_item_details_text_size"
+            android:layout_weight="1"
+            android:text="S.No." />
+
+        <TextView
+            android:singleLine="true"
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:id="@+id/transactionType"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/home_item_details_text_size"
+            android:text="TransactionType" />
+
+        <TextView
+            android:singleLine="true"
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:id="@+id/gst"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/home_item_details_text_size"
+            android:text="GST" />
+
+        <TextView
+            android:singleLine="true"
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:id="@+id/totalamount"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/home_item_details_text_size"
+            android:text="TotalAmount" />
+
+        <TextView
+            android:singleLine="true"
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:id="@+id/totalqty"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/home_item_details_text_size"
+            android:text="TotalQty" />
+
+        <TextView
+            android:singleLine="true"
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/home_item_details_text_size"
+            android:text="Time" />
+
+        <TextView
+            android:singleLine="true"
+            android:textSize="@dimen/ll_allreports_textsize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View"
+            android:layout_marginLeft="@dimen/home_item_details_text_size"
+            android:layout_gravity="center_vertical"/>
+
+        <!--<Spinner-->
+            <!--android:singleLine="true"-->
+            <!--android:id="@+id/spinner"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginLeft="@dimen/home_item_details_text_size"-->
+            <!--android:textSize="@dimen/ll_allreports_textsize" />-->
+
+
+    </LinearLayout>
+   <include  layout="@layout/bottom_line"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

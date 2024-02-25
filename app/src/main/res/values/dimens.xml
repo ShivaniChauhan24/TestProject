@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="all_background_margin">35dp</dimen>
+
+    <dimen name="radionbuttonpadding">5dp</dimen>
+    <dimen name="eighteen_dp">18dp</dimen>
+    <dimen name="fourty_five_dp">45dp</dimen>
+    <dimen name="fourty_six">46dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="fifty_two_dp">52dp</dimen>
+    <dimen name="three_dp">3dp</dimen>
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="sixty_dp">60dp</dimen>
+    <dimen name="six_dp">6dp</dimen>
+    <dimen name="seven_dp">7dp</dimen>
+    <dimen name="fifteen_dp">15dp</dimen>
+    <dimen name="five_100dp">500dp</dimen>
+    <dimen name="two_100dp">200dp</dimen>
+    <dimen name="two_dp">2dp</dimen>
+    <dimen name="twenty_five">25dp</dimen>
+    <dimen name="fourdp">4dp</dimen>
+    <dimen name="eighty_dp">80dp</dimen>
+    <dimen name="twenty_eight">28dp</dimen>
+    <dimen name="thirtyfivedp">35dp</dimen>
+    <dimen name="fivefiftydp">550dp</dimen>
+    <dimen name="fiftydp">50dp</dimen>
+    <dimen name="twelvesp">12sp</dimen>
+    <dimen name="ten_sp">10sp</dimen>
+    <dimen name="one_hundred_thirty">130dp</dimen>
+    <dimen name="eighteen_sp">18sp</dimen>
+    <dimen name="twentytwo_sp">22sp</dimen>
+    <dimen name="twelvedp">12dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
+    <dimen name="one_hundred_fourtyfive">145dp</dimen>
+    <dimen name="one_hundred_sixty_dp">160dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="fourty_dp">40dp</dimen>
+    <dimen name="one_hundred_dp">100dp</dimen>
+    <dimen name="two_30dp">230dp</dimen>
+    <dimen name="three_hundred_thirty_dp">340dp</dimen>
+    <dimen name="thirtytwo">32dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="thirty_dp">30dp</dimen>
+    <dimen name="thirty_fivedp">35dp</dimen>
+    <dimen name="one_hundred_seventy_dp">170dp</dimen>
+    <dimen name="one_hundred_fiftydp">150dp</dimen>
+    <dimen name="fifteensp">15sp</dimen>
+    <dimen name="two_50dp">250dp</dimen>
+</resources>

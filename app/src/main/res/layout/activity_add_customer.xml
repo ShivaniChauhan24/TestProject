@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AddCustomer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:tint="@color/tint_color"
+            android:src="@drawable/ic_back_arrow" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/addcustomer_ll_margintop"
+        android:background="#f9f9f9"
+        android:elevation="1dp"
+        android:padding="@dimen/addcustomer_ll_padding"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="800dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/addcustomer_ll_inside_marginbottom"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="First Name*" />
+
+                    <EditText
+                        android:id="@+id/firstname"
+                        android:paddingRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/addcustomer_edittext_height"
+                        android:background="@drawable/login_text_border"
+                        android:hint="Enter first name"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Last Name" />
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:paddingRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/addcustomer_edittext_height"
+                        android:background="@drawable/login_text_border"
+                        android:hint="Enter last name"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/addcustomer_ll_inside_marginbottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Email" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:paddingRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/addcustomer_edittext_height"
+                        android:background="@drawable/login_text_border"
+                        android:hint="Enter email address"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Phone Number" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/addcustomer_edittext_height"
+                        android:maxLength="10"
+                        android:background="@drawable/login_text_border"
+                        android:hint="Enter phone number"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Sex*" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/editCustomer_radiogroup"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="match_parent"
+                        android:text="Male"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent" />
+
+                    <RadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="match_parent"
+                        android:text="Female"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_height="match_parent" />
+
+                </RadioGroup>
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/spinnerCustom"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/addcustomer_edittext_height"-->
+                    <!--android:background="@drawable/custom_dropdown"-->
+                    <!--android:spinnerMode="dropdown" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/addcustomer_createbutton_margintop">
+
+        <TextView
+            android:id="@+id/createcustomer"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/addcustomer_createButton_height"
+            android:background="@drawable/custom_button_border"
+            android:gravity="center"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/addcustomer_createbutton_margintop">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/addcustomer_createButton_height"
+            android:background="@drawable/custom_button_border"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>
